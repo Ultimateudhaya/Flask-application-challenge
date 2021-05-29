@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Link Extractor</title>
+</head>
+<body>
+ <h1>Link Extractor</h1>
+ <form method="POST">
+     <label>URL
+        <input type = 'text' name = 'url'>
+     </label>
+     <input type="submit">
+ </form>
+<div class="messages">
+{% for i in li %}
+    <a href={{i}}>{{i}}</a><br>
+{% endfor %}
+</div>
+</body>
+</html>
